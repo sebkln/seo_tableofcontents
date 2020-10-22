@@ -1,0 +1,40 @@
+{
+	"name": "sebkln/seo-tableofcontents",
+	"type": "typo3-cms-extension",
+	"description": "This new content element allows to get anchor links in Google search results. It works well with EXT:content_slug (which adds human-readable URL fragments to TYPO3 content elements).",
+	"license": [
+		"GPL-2.0-or-later"
+	],
+	"keywords": [
+		"TYPO3",
+		"extension",
+		"seo",
+		"SERPS",
+		"Google",
+		"URL fragment",
+		"jump links",
+		"anchor",
+		"table of contents",
+		"content element"
+	],
+	"homepage": "https://www.sebkln.de",
+	"authors": [
+		{
+			"name": "Sebastian Klein",
+			"email": "sebastian@sebkln.de",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"typo3/cms-core": ">=8.7.0 <10.4.99"
+	},
+	"replace": {
+		"sebkln/seo-tableofcontents": "self.version",
+		"typo3-ter/seo-tableofcontents": "self.version"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "seo_tableofcontents"
+		}
+	}
+}

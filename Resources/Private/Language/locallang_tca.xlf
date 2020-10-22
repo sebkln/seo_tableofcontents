@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-10-20T19:12:17Z"
+		  product-name="seo_tableofcontents">
+		<header/>
+		<body>
+			<trans-unit id="tx_seotableofcontents_menu_section_seo">
+				<source>SEO Table of contents</source>
+			</trans-unit>
+			<trans-unit id="tx_seotableofcontents_menu_section_seo.wizard.title">
+				<source>SEO Table of contents</source>
+			</trans-unit>
+			<trans-unit id="tx_seotableofcontents_menu_section_seo.wizard.description">
+				<source>Lists records of the current page. Allows search engines to add 'jump to' links to your sections.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

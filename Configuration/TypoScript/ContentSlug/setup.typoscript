@@ -1,0 +1,5 @@
+/**
+ * Use these custom templates if you intend to use EXT:content_slug.
+ */
+lib.contentElement.partialRootPaths.102 = EXT:seo_tableofcontents/Resources/Private/Overrides/content_slug/Partials/
+tt_content.tx_seotableofcontents_menu_section_seo.templateRootPaths.2 = EXT:seo_tableofcontents/Resources/Private/Overrides/content_slug/Templates/

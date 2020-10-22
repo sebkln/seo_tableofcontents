@@ -1,0 +1,29 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:comment>
+<!--
+    Customized version for use with EXT:content_slug.
+
+    If a URL fragment is set for the content element,
+    we'll use that and the 'c' prefixed uid for the anchor.
+    Otherwise, we'll fall back on the 'ce' prefixed uid.
+-->
+</f:comment>
+
+<f:layout name="Default" />
+<f:section name="Main">
+
+    <f:if condition="{content}">
+        <ul>
+            <f:for each="{content}" as="element">
+                <li>
+                    <a href="#{f:if(condition: '{element.data.tx_content_slug_fragment}', then: 'c{element.data.uid}-{element.data.tx_content_slug_fragment}', else: 'ce{element.data.uid}')}">
+                        {element.data.header}
+                    </a>
+                </li>
+            </f:for>
+        </ul>
+    </f:if>
+
+</f:section>
+</html>

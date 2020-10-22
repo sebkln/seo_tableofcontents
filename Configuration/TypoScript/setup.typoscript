@@ -1,0 +1,43 @@
+/**
+* Override default partials of fluid_styled_content.
+* The custom header partial will render the necessary id attributes (anchors) to headings.
+*/
+lib.contentElement {
+    partialRootPaths.1 = EXT:seo_tableofcontents/Resources/Private/Overrides/fluid_styled_content/Partials/
+}
+
+
+/**
+* Configuration for content element 'SEO Table of contents'.
+*
+* The extended WHERE clause has to restrict the available content elements
+* to those whose header is both set and not hidden.
+*/
+tt_content.tx_seotableofcontents_menu_section_seo =< lib.contentElement
+tt_content.tx_seotableofcontents_menu_section_seo {
+    templateName = MenuSectionSeo
+    templateRootPaths {
+        1 = EXT:seo_tableofcontents/Resources/Private/Templates/
+        10 = {$styles.templates.templateRootPath}
+    }
+    dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+        10 {
+            table = tt_content
+            pidInList.data = page:uid
+            as = content
+            where (
+                sectionIndex = 1
+                AND header != ""
+                AND header_layout != 100
+            )
+            orderBy = sorting
+        }
+    }
+    stdWrap {
+        editIcons = tt_content: header [header_layout]
+        editIcons {
+            iconTitle.data = LLL:EXT:fluid_styled_content/Resources/Private/Language/FrontendEditing.xlf:editIcon.menu
+        }
+    }
+}
