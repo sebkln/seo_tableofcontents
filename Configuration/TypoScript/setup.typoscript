@@ -32,6 +32,10 @@ tt_content.tx_seotableofcontents_menu_section_seo {
                 AND header_layout != 100
             )
             orderBy = sorting
+
+            dataProcessing {
+                10 = Sebkln\ContentSlug\DataProcessing\FragmentIdentifierProcessor
+            }
         }
     }
     stdWrap {

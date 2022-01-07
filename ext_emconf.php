@@ -7,10 +7,10 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Sebastian Klein',
     'author_email' => 'sebastian@sebkln.de',
     'state' => 'test',
-    'version' => '1.0.0',
+    'version' => '2.0.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '8.7.0-10.4.99',
+            'typo3' => '8.7.0-11.5.99',
             'fluid_styled_content' => ''
         ],
         'conflicts' => [

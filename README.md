@@ -1,4 +1,4 @@
-![Speech bubble](Resources/Public/Icons/Extension.svg)
+![Extension icon](Resources/Public/Icons/Extension.svg)
 
 # SEO Table of contents (TYPO3 Extension)
 
@@ -25,7 +25,7 @@ The extension also extends the Header partials of EXT:fluid_styled_content with 
 
 ## Compatibility
 
-TYPO3 8.7.0 - 10.4.99
+TYPO3 8.7.0 - 11.5.99
 
 
 ## Installation

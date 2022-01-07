@@ -4,8 +4,7 @@
 <!--
     Customized version for use with EXT:content_slug.
 
-    If a URL fragment is set for the content element,
-    we'll use that and the 'c' prefixed uid for the anchor.
+    If a content element has a human-readable fragment, render it.
     Otherwise, we'll fall back on the 'ce' prefixed uid.
 -->
 </f:comment>
@@ -17,7 +16,7 @@
         <ul>
             <f:for each="{content}" as="element">
                 <li>
-                    <a href="#{f:if(condition: '{element.data.tx_content_slug_fragment}', then: 'c{element.data.uid}-{element.data.tx_content_slug_fragment}', else: 'ce{element.data.uid}')}">
+                    <a href="#{f:if(condition: '{element.fragmentIdentifier}', then: '{element.fragmentIdentifier}', else: 'ce{element.data.uid}')}">
                         {element.data.header}
                     </a>
                 </li>

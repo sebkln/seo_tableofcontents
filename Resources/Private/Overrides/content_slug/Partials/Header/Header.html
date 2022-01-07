@@ -6,8 +6,8 @@
 
     Adjustments for URL fragment rendering:
     1. The first condition will check if the custom fragment field is filled.
-       In this case, we'll use this fragment, combined with the content element's uid.
-       Otherwise, only the uid is used (with a different prefix).
+       In this case, we'll use this fragment as given.
+       Otherwise, the uid is used with a "ce" prefix (identical to "MenuSectionSeo.html").
        This ensures the compatibility with the new 'SEO Table of contents' menu,
        as well as with the default 'Section Index' combined with EXT:content_slug.
     2. Added an id attribute with the fragment variable to all headings.
@@ -19,7 +19,7 @@
 
 <f:if condition="{fragmentIdentifier}">
     <f:then>
-        <f:variable name="fragment" value="c{uid}-{fragmentIdentifier}" />
+        <f:variable name="fragment" value="{fragmentIdentifier}" />
     </f:then>
     <f:else>
         <f:variable name="fragment" value="ce{uid}" />
