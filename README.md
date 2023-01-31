@@ -25,7 +25,7 @@ The extension also extends the Header partials of EXT:fluid_styled_content with 
 
 ## Compatibility
 
-TYPO3 8.7.0 - 11.5.99
+TYPO3 11.5.0 - 12.4.99
 
 
 ## Installation

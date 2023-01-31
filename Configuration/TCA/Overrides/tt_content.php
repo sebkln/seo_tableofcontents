@@ -1,8 +1,11 @@
 <?php
-defined('TYPO3_MODE') or die();
+
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
+defined('TYPO3') or die();
 
 // Add 'SEO Table of contents' to the CType dropdown:
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
+ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
     [

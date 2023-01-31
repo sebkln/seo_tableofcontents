@@ -26,11 +26,7 @@
 		}
 	],
 	"require": {
-		"typo3/cms-core": ">=8.7.0 <11.5.99"
-	},
-	"replace": {
-		"sebkln/seo-tableofcontents": "self.version",
-		"typo3-ter/seo-tableofcontents": "self.version"
+		"typo3/cms-core": ">=11.5.0 <12.4.99"
 	},
 	"extra": {
 		"typo3/cms": {

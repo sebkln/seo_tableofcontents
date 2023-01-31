@@ -1,13 +1,16 @@
 <?php
-defined('TYPO3_MODE') or die();
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
+defined('TYPO3') or die();
+
+ExtensionManagementUtility::addStaticFile(
     'seo_tableofcontents',
     'Configuration/TypoScript',
     'SEO Table of contents (Basic)'
 );
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+ExtensionManagementUtility::addStaticFile(
     'seo_tableofcontents',
     'Configuration/TypoScript/ContentSlug',
     'SEO Table of contents (with content_slug)'

@@ -1,18 +1,11 @@
 <?php
-defined('TYPO3_MODE') or die();
 
-// Register icon for new content element:
-$iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
-    \TYPO3\CMS\Core\Imaging\IconRegistry::class
-);
-$iconRegistry->registerIcon(
-    'tx-seotableofcontents-menu-section-seo',
-    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-    ['source' => 'EXT:seo_tableofcontents/Resources/Public/Icons/menu-section-seo.svg']
-);
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
+defined('TYPO3') or die();
 
 // Register new content element:
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('
+ExtensionManagementUtility::addPageTSConfig('
         mod.wizards.newContentElement.wizardItems.menu {
             elements {
                 tx_seotableofcontents_menu_section_seo {

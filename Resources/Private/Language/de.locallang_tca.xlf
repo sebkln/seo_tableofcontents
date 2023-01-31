@@ -4,15 +4,15 @@
 		  product-name="seo_tableofcontents" target-language="de">
 		<header/>
 		<body>
-			<trans-unit id="tx_seotableofcontents_menu_section_seo">
+			<trans-unit id="tx_seotableofcontents_menu_section_seo" approved="yes">
 				<source>SEO Table of contents</source>
 				<target>SEO-Inhaltsverzeichnis</target>
 			</trans-unit>
-			<trans-unit id="tx_seotableofcontents_menu_section_seo.wizard.title">
+			<trans-unit id="tx_seotableofcontents_menu_section_seo.wizard.title" approved="yes">
 				<source>SEO Table of contents</source>
 				<target>SEO-Inhaltsverzeichnis</target>
 			</trans-unit>
-			<trans-unit id="tx_seotableofcontents_menu_section_seo.wizard.description">
+			<trans-unit id="tx_seotableofcontents_menu_section_seo.wizard.description" approved="yes">
 				<source>Lists records of the current page. Allows search engines to add 'jump to' links to your sections.</source>
 				<target>Inhaltsverzeichnis der aktuellen Seite. Suchmaschinen können damit Sprungmarken zu Textabschnitten ergänzen.</target>
 			</trans-unit>
